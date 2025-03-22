@@ -1,0 +1,87 @@
+---
+import AstroIcon from "./icons/AstroI.astro";
+import BootstrapIcon from "./icons/Bootstrap.astro";
+import CplusplusIcon from "./icons/Cplusplus.astro";
+import CssIcon from "./icons/Css.astro";
+import DotNetIcon from "./icons/DotNet.astro";
+import HtmlIcon from "./icons/Html.astro";
+import JavaIcon from "./icons/Java.astro";
+import JavaScriptIcon from "./icons/JavaScript.astro";
+import MySqlIcon from "./icons/MySql.astro";
+import PythonIcon from "./icons/Python.astro";
+import ReactIcon from "./icons/React.astro";
+import SqlServerIcon from "./icons/SqlServer.astro";
+import TailwindIcon from "./icons/Tailwind.astro";
+import TechCategory from "./TechCategory.astro";
+
+const LANGUAGES = {
+  Cplusplus: {
+    name: "C++",
+    icon: CplusplusIcon,
+  },
+  Java: {
+    name: "Java",
+    icon: JavaIcon,
+  },
+  Python: {
+    name: "Python",
+    icon: PythonIcon,
+  },
+};
+
+const FRAMEWORKS = {
+  Dotnet: {
+    name: ".NET",
+    icon: DotNetIcon,
+  },
+  React: {
+    name: "React",
+    icon: ReactIcon,
+  },
+  Astro: {
+    name: "Astro",
+    icon: AstroIcon,
+  },
+  Tailwind: {
+    name: "TailwindCSS",
+    icon: TailwindIcon,
+  },
+  Bootstrap: {
+    name: "Bootstrap",
+    icon: BootstrapIcon,
+  },
+};
+
+const WEB = {
+  Html: {
+    name: "HTML",
+    icon: HtmlIcon,
+  },
+  Css: {
+    name: "CSS",
+    icon: CssIcon,
+  },
+  JavaSript: {
+    name: "JavaScript",
+    icon: JavaScriptIcon,
+  },
+};
+
+const DATABASE = {
+  MySql: {
+    name: "MySQL",
+    icon: MySqlIcon,
+  },
+  SqlServer: {
+    name: "SQL Server",
+    icon: SqlServerIcon,
+  },
+};
+---
+
+<div class="grid md:grid-cols-2 gap-x-5 sm:grid-cols-1">
+  <TechCategory title="Lenguajes de Programación" items={LANGUAGES} />
+  <TechCategory title="Desarrollo Web" items={WEB} />
+  <TechCategory title="Frameworks" items={FRAMEWORKS} />
+  <TechCategory title="Base de datos" items={DATABASE} />
+</div>
