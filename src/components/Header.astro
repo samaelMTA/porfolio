@@ -3,6 +3,11 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 const navItems = [
   {
+    title: "Inicio",
+    label: "inicio",
+    url: "/#inicio",
+  },
+  {
     title: "Habilidades",
     label: "habilidades",
     url: "/#habilidades",
@@ -39,7 +44,7 @@ const navItems = [
     {
       navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500"
+          class="relative md:block px-2 py-2 transition md:hover:text-blue-500 md:dark:hover:text-blue-500 hidden"
           aria-label={link.label}
           href={link.url}
         >

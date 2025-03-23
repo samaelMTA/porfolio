@@ -12,7 +12,7 @@ import PythonIcon from "./icons/Python.astro";
 import ReactIcon from "./icons/React.astro";
 import SqlServerIcon from "./icons/SqlServer.astro";
 import TailwindIcon from "./icons/Tailwind.astro";
-import TechCategory from "./TechCategory.astro";
+import SkillCategory from "./SkillCategory.astro";
 
 const LANGUAGES = {
   Cplusplus: {
@@ -80,8 +80,8 @@ const DATABASE = {
 ---
 
 <div class="grid md:grid-cols-2 gap-x-5 sm:grid-cols-1">
-  <TechCategory title="Lenguajes de Programación" items={LANGUAGES} />
-  <TechCategory title="Desarrollo Web" items={WEB} />
-  <TechCategory title="Frameworks" items={FRAMEWORKS} />
-  <TechCategory title="Base de datos" items={DATABASE} />
+  <SkillCategory title="Lenguajes de Programación" items={LANGUAGES} />
+  <SkillCategory title="Desarrollo Web" items={WEB} />
+  <SkillCategory title="Frameworks" items={FRAMEWORKS} />
+  <SkillCategory title="Base de datos" items={DATABASE} />
 </div>
