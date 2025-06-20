@@ -4,6 +4,7 @@ import Badge from "@/components/Badge.astro";
 import GitHubIcon from "@/components/icons/GitHub.astro";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
+import PdfIcon from "@/components/icons/Pdf.astro";
 import SocialPill from "@/components/SocialPill.astro";
 ---
 
@@ -51,5 +52,9 @@ import SocialPill from "@/components/SocialPill.astro";
   <SocialPill href="https://github.com/samaelMTA/">
     <GitHubIcon class="size-5" />
     Github
+  </SocialPill>
+  <SocialPill download="CV_Miguel_Colunche" href="/CV_Miguel_Colunche.pdf">
+    <PdfIcon class="size-5" />
+    CV
   </SocialPill>
 </nav>
