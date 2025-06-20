@@ -6,6 +6,7 @@ import HtmlIcon from "./icons/Html.astro";
 import CssIcon from "./icons/Css.astro";
 import TailwindIcon from "./icons/Tailwind.astro";
 import AstroIcon from "./icons/AstroI.astro";
+import JavaScriptIcon from "./icons/JavaScript.astro";
 
 const TAGS = {
   HTML: {
@@ -19,7 +20,7 @@ const TAGS = {
     icon: CssIcon,
   },
   TAILWIND: {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     class: "border-[#38bdf8]",
     icon: TailwindIcon,
   },
@@ -28,16 +29,21 @@ const TAGS = {
     class: "border-[#ff5d01]",
     icon: AstroIcon,
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "border-[#f7df1e]",
+    icon: JavaScriptIcon,
+  },
 };
 
 const PROJECTS = [
   {
     title: "Porfolio",
     description:
-      "Portafolio personal desarrollado con Astro y Tailwind CSS. Muestra mis proyectos, habilidades y experiencia laboral.",
+      "Desarrollo de un portafolio personal para presentar proyectos, habilidades y experiencia profesional como ingeniero de software.",
     github: "https://github.com/samaelMTA/porfolio",
     image: "/projects/Porfolio.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.ASTRO, TAGS.TAILWIND],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.ASTRO, TAGS.TAILWIND],
   },
   {
     title: "FISI Silabos",
